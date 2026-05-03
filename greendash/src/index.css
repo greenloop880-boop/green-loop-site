@@ -880,6 +880,7 @@ section {
   height: 70%;
   background: radial-gradient(circle, rgba(116, 198, 157, .15) 0%, transparent 70%);
   border-radius: 50%;
+  opacity: var(--opacity-glow, 1);
 }
 
 .product-img .fan-icon {

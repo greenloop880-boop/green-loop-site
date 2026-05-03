@@ -63,8 +63,9 @@ const Products = () => {
                     style={{ 
                       position: 'relative', 
                       overflow: 'hidden',
-                      // Give it a subtle background if no image
-                      background: product.image_url ? '#fff' : 'linear-gradient(135deg, #1b4332 0%, #081c15 100%)' 
+                      background: isFeatured ? '#ffffff' : (product.image_url ? '#ffffff' : 'linear-gradient(135deg, #1b4332 0%, #081c15 100%)'),
+                      // Remove pseudo-element effects for featured
+                      '--opacity-glow': isFeatured ? '0' : '1'
                     }}
                   >
                     <div className="product-img-label" style={{ zIndex: 2 }}>{product.category_label}</div>
@@ -76,10 +77,11 @@ const Products = () => {
                         style={{ 
                           width: '100%', 
                           height: '100%', 
-                          objectFit: 'cover', 
+                          objectFit: isFeatured ? 'contain' : 'cover', 
                           position: 'absolute',
                           top: 0,
-                          left: 0
+                          left: 0,
+                          padding: isFeatured ? '1.5rem' : '0'
                         }} 
                       />
                     ) : (
