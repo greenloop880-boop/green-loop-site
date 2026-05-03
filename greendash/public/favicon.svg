@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 140">
+  <!-- G letter: octagonal shape with chamfered corners, open right with inner diagonal shelf -->
+  <path d="
+    M 22,0
+    L 92,0
+    L 107,15
+    L 107,52
+    L 68,52
+    L 52,68
+    L 52,83
+    L 107,83
+    L 107,68
+    L 122,68
+    L 122,122
+    L 22,122
+    L 0,100
+    L 0,22
+    Z
+  " fill="#1a432e"/>
+  <!-- G inner white cutout -->
+  <path d="
+    M 18,18
+    L 18,104
+    L 104,104
+    L 104,86
+    L 70,86
+    L 70,66
+    L 90,52
+    L 104,52
+    L 104,18
+    Z
+  " fill="white"/>
+
+  <!-- L letter: vertical bar with slanted top, horizontal bar with slanted bottom-right -->
+  <path d="
+    M 130,18
+    L 148,0
+    L 164,0
+    L 164,104
+    L 210,104
+    L 200,122
+    L 130,122
+    Z
+  " fill="#1a432e"/>
+</svg>
