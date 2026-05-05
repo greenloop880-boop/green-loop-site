@@ -1952,41 +1952,50 @@ footer ul a:hover {
 }
 
 /* ── Announce ticker ──────────────────────────────────── */
-.ticker-wrap {
+.ticker-wrapper {
+  margin-top: var(--nav-h);
   overflow: hidden;
-  background: linear-gradient(90deg, var(--gold) 0%, #e6b840 50%, var(--gold) 100%);
-  padding: .6rem 0;
-}
-
-.ticker {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 12px 0;
+  width: 100%;
   display: flex;
-  gap: 4rem;
-  animation: ticker 35s linear infinite;
   white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-@keyframes ticker {
-  from {
-    transform: translateX(0);
-  }
+.ticker-content {
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
+  animation: seamlessTicker 60s linear infinite;
+  will-change: transform;
+}
 
-  to {
-    transform: translateX(-50%);
+@keyframes seamlessTicker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
-.ticker span {
+.ticker-content span {
   font-size: .85rem;
   font-weight: 800;
-  color: var(--dark);
   text-transform: uppercase;
   letter-spacing: .15em;
+  padding: 0 1.5rem;
 }
 
-.ticker span.dot {
-  color: var(--forest);
+.ticker-content span.dot {
+  color: var(--gold);
   font-size: 1.2rem;
+  padding: 0;
+  margin: 0 0.5rem;
 }
+
 
 /* ── Modals & Forms (Premium Styling) ──────────────────── */
 .modal-overlay {
@@ -2408,8 +2417,12 @@ select.form-input {
 
 
 @media (max-width: 600px) {
+  .container, .container--wide, .container--hero {
+    padding: 0 1.2rem;
+  }
+
   .modal-content {
-    padding: 2rem 1.5rem !important;
+    padding: 2rem 1.2rem !important;
   }
 
   .form-grid {
@@ -2530,7 +2543,7 @@ select.form-input {
 
   .gl-hero {
     text-align: left;
-    padding: 2rem 1rem;
+    padding: 3rem 0;
   }
 
   .gl-hero p {

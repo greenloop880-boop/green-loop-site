@@ -27,39 +27,21 @@ const Ticker = () => {
     <>
       {messages.map((m, i) => (
         <React.Fragment key={`msg-${i}`}>
-          <span style={{ padding: '0 1.5rem', fontWeight: '500' }}>{m}</span>
-          <span className="dot" style={{ color: 'var(--gold)', margin: '0 0.5rem' }}>✦</span>
+          <span>{m}</span>
+          <span className="dot">✦</span>
         </React.Fragment>
       ))}
     </>
   );
 
   return (
-    <div style={{
-      marginTop: '72px',
-      overflow: 'hidden',
-      display: 'flex',
-      whiteSpace: 'nowrap',
-      backgroundColor: 'var(--dark)', 
-      color: 'var(--white)',
-      padding: '12px 0',
-      width: '100vw'
-    }}>
-      <div style={{ display: 'flex', animation: 'seamlessTicker 60s linear infinite' }}>
+    <div className="ticker-wrapper">
+      <div className="ticker-content">
         {renderMessages()}
         {renderMessages()}
         {renderMessages()}
         {renderMessages()}
       </div>
-
-      <style>
-        {`
-          @keyframes seamlessTicker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); } 
-          }
-        `}
-      </style>
     </div>
   );
 };
