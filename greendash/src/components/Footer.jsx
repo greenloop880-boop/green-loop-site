@@ -5,6 +5,11 @@ import stpiLogo from '../assets/STPI.png';
 import iitLogo from '../assets/IIT.png';
 
 const Footer = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer>
       <div className="container">
@@ -24,7 +29,7 @@ const Footer = () => {
 
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="fb-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
+            <a href="/" className="fb-logo" onClick={scrollToTop} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem', textDecoration: 'none' }}>
               <img src={logo} alt="Green Loop Logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', padding: '2px' }} />
               <div className="logo-text" style={{ display: 'flex', flexDirection: 'column' }}>
                 <strong style={{ color: '#66CDAA', fontFamily: 'Consolas', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.3rem', lineHeight: '1' }}>
@@ -32,7 +37,7 @@ const Footer = () => {
                 </strong>
                 <span style={{ fontSize: '0.85rem', color: '#a0aec0', marginTop: '4px', lineHeight: '1.2' }}>Powered by Velotech Innovations</span>
               </div>
-            </div>
+            </a>
             <p>Velotech Innovations Pvt. Ltd. is an IIT Bhubaneswar-incubated company building India's greenest fan ecosystem — through VELORA fans and the Green Loop circular economy initiative.</p>
             <div className="contact">
               <div>📍 IIT Bhubaneswar Campus, Jatni, Odisha</div>

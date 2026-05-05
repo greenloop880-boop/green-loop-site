@@ -4,10 +4,16 @@ import logo from '../assets/Logo.png';
 const Navbar = ({ scrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsOpen(false);
+  };
+
   return (
     <nav id="navbar" className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-inner">
-        <div className="nav-brand">
+        <a href="/" className="nav-brand" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
           <img src={logo} alt="Green Loop Logo" style={{ height: '42px', width: 'auto', borderRadius: '4px' }} />
           <div className="nav-name">
             {/* Elegant Sea Green styling applied here */}
@@ -22,7 +28,7 @@ const Navbar = ({ scrolled }) => {
             </strong>
             <span>Powered by Velotech Innovations</span>
           </div>
-        </div>
+        </a>
 
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <span className="bar"></span>
