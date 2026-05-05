@@ -9,7 +9,7 @@ const GreenLoop = () => {
           <h2>India's First <em>Circular Fan Economy</em></h2>
           <p>Green Loop is Velotech Innovations' mission-driven initiative that transforms every old induction fan into a
             revenue-generating, carbon-offsetting asset. We don't just sell new fans — we close the loop entirely.</p>
-          <div className="gl-flow">
+          <div className="gl-flow" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', alignItems: 'center' }}>
             <div className="gl-step"><span className="dot"></span> Upgrade</div>
             <span className="gl-arrow">→</span>
             <div className="gl-step"><span className="dot"></span> Buy Back</div>

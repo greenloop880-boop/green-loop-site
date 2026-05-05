@@ -969,6 +969,10 @@ section {
   margin-bottom: 1.8rem;
 }
 
+.product-card--featured .product-specs {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .spec {
   background: var(--offwhite);
   border-radius: 8px;
@@ -1229,16 +1233,39 @@ section {
   }
 }
 
+.gl-hero {
+  position: relative;
+  overflow: hidden;
+}
+
 .gl-hero::before {
   content: '♻';
   position: absolute;
-  right: 3rem;
   top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
   font-size: 25rem;
-  opacity: .05;
+  opacity: 0.05;
   line-height: 1;
   animation: slowSpin 60s linear infinite;
   transform-origin: center;
+  pointer-events: none;
+}
+
+@keyframes slowSpin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .gl-hero::before {
+    display: none;
+  }
 }
 
 .gl-hero .eyebrow {
@@ -2279,6 +2306,10 @@ select.form-input {
     flex-direction: column;
   }
 
+  .product-card--featured .product-specs {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .about-grid,
   .services-grid {
     grid-template-columns: 1fr;
@@ -2298,6 +2329,31 @@ select.form-input {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Bento Grid Mobile */
+  .hero-bento-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+
+  .stats-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .divider-v {
+    display: none;
+  }
+
+  .how-steps {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .h-arrow {
+    display: none;
   }
 
   .hamburger {
@@ -2346,7 +2402,10 @@ select.form-input {
   .offer-card--featured:hover {
     transform: translateY(-8px);
   }
+
+
 }
+
 
 @media (max-width: 600px) {
   .modal-content {
@@ -2357,16 +2416,13 @@ select.form-input {
     grid-template-columns: 1fr;
   }
 
-  .form-grid>.form-group[style*="grid-column: span 2"] {
-    grid-column: span 1 !important;
-  }
-
   .impact-strip {
     grid-template-columns: 1fr;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .hero-actions {
@@ -2391,9 +2447,118 @@ select.form-input {
   }
 
   section {
-    padding: 4rem 0;
+    padding: 3rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .hero-sub {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.05rem;
+  }
+
+  .hero-eyebrow {
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 0.65rem;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+  }
+
+  .hero-eyebrow .line {
+    display: none;
+  }
+
+  .section-label,
+  .display,
+  .lead {
+    text-align: center;
+  }
+
+  .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .products-header,
+  .about-grid,
+  .services-header {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .stats-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .bento-stat .val {
+    font-size: 1.4rem;
+  }
+
+  .bento-stat .lbl {
+    font-size: 0.55rem;
+  }
+
+  .how-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .h-step {
+    gap: 0.3rem;
+  }
+
+  .h-lbl {
+    font-size: 0.65rem;
+  }
+
+  .how-steps>.h-step:last-child {
+    grid-column: span 2;
+  }
+
+  .gl-hero {
+    text-align: left;
+    padding: 2rem 1rem;
+  }
+
+  .gl-hero p {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+
+  .gl-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .gl-arrow {
+    display: inline-block;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+
+  .gl-step {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
   }
 }
+
 
 /* ── Animations ──────────────────────────────────────── */
 .fade-up {

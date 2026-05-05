@@ -11,7 +11,7 @@ const Products = () => {
         .from('store_products')
         .select('*')
         .order('created_at', { ascending: true });
-        
+
       if (error) {
         console.error("Supabase Error fetching products:", error);
       } else if (data) {
@@ -58,10 +58,10 @@ const Products = () => {
               return (
                 <div key={product.id} className={`product-card product-card--${product.card_color || 'sm'}`}>
                   {/* Dynamic Image from Admin Panel (R2) */}
-                  <div 
-                    className="product-img" 
-                    style={{ 
-                      position: 'relative', 
+                  <div
+                    className="product-img"
+                    style={{
+                      position: 'relative',
                       overflow: 'hidden',
                       background: isFeatured ? '#ffffff' : (product.image_url ? '#ffffff' : 'linear-gradient(135deg, #1b4332 0%, #081c15 100%)'),
                       // Remove pseudo-element effects for featured
@@ -69,26 +69,26 @@ const Products = () => {
                     }}
                   >
                     <div className="product-img-label" style={{ zIndex: 2 }}>{product.category_label}</div>
-                    
+
                     {product.image_url ? (
-                      <img 
-                        src={product.image_url} 
-                        alt={product.title} 
-                        style={{ 
-                          width: '100%', 
-                          height: '100%', 
-                          objectFit: isFeatured ? 'contain' : 'cover', 
+                      <img
+                        src={product.image_url}
+                        alt={product.title}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: isFeatured ? 'contain' : 'cover',
                           position: 'absolute',
                           top: 0,
                           left: 0,
                           padding: isFeatured ? '1.5rem' : '0'
-                        }} 
+                        }}
                       />
                     ) : (
                       <div className="fan-icon" style={{ fontSize: '3rem', zIndex: 1 }}>{isFeatured ? '🌀' : '🌬️'}</div>
                     )}
                   </div>
-                  
+
                   <div className="product-body">
                     <div className="product-tag-row">
                       {tags.map((tag, i) => (
@@ -99,8 +99,8 @@ const Products = () => {
                     </div>
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
-                    
-                    <div className="product-specs" style={{ gridTemplateColumns: isFeatured ? 'repeat(3, 1fr)' : '1fr 1fr' }}>
+
+                    <div className="product-specs">
                       {specs.map((spec, i) => (
                         <div className="spec" key={i}>
                           <div className="s-val">{spec.val}</div>
@@ -108,13 +108,13 @@ const Products = () => {
                         </div>
                       ))}
                     </div>
-                    
+
                     <div className="product-price">
                       {product.old_price && <span className="price-old">{product.old_price}</span>}
                       <span className="price" style={{ fontSize: isFeatured ? '2rem' : '1.55rem' }}>{product.price}</span>
                       {product.price_note && <span className="price-note">{product.price_note}</span>}
                     </div>
-                    
+
                     <div style={{ display: 'flex', gap: '.8rem', flexWrap: 'wrap', width: '100%' }}>
                       <button
                         type="button"

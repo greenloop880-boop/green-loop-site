@@ -24,13 +24,13 @@ const Footer = () => {
 
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="fb-logo">
+            <div className="fb-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
               <img src={logo} alt="Green Loop Logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', padding: '2px' }} />
-              <div className="logo-text">
-                <strong style={{ color: '#66CDAA', fontFamily: 'Consolas', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.3rem' }}>
+              <div className="logo-text" style={{ display: 'flex', flexDirection: 'column' }}>
+                <strong style={{ color: '#66CDAA', fontFamily: 'Consolas', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.3rem', lineHeight: '1' }}>
                   GREEN LOOP
                 </strong>
-                <span>Powered by Velotech Innovations</span>
+                <span style={{ fontSize: '0.85rem', color: '#a0aec0', marginTop: '4px', lineHeight: '1.2' }}>Powered by Velotech Innovations</span>
               </div>
             </div>
             <p>Velotech Innovations Pvt. Ltd. is an IIT Bhubaneswar-incubated company building India's greenest fan ecosystem — through VELORA fans and the Green Loop circular economy initiative.</p>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           <div>
             <h5>Products</h5>
-            <ul>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
               <li><a href="#products">VELORA Pro 1200mm</a></li>
               <li><a href="#products">VELORA Lite 1200mm</a></li>
               <li><a href="#products">VELORA Smart Fan</a></li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
           <div>
             <h5>Services</h5>
-            <ul>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
               <li><a href="#services">Instant Karo Upgrade</a></li>
               <li><a href="#services">Fan Buy-Back</a></li>
               <li><a href="#services">BLDC Retrofit</a></li>
@@ -66,7 +66,7 @@ const Footer = () => {
 
           <div>
             <h5>GREEN LOOP</h5>
-            <ul>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
               <li><a href="#greenloop">About the Initiative</a></li>
               <li><a href="#how">How It Works</a></li>
               <li><a href="#offers">Our Plans</a></li>
