@@ -29,7 +29,7 @@
   --font-body: 'DM Sans', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
 
-  --nav-h: 72px;
+  --nav-h: 60px;
   --r: 12px;
   --shadow: 0 4px 24px rgba(0, 0, 0, .12);
   --shadow-lg: 0 16px 56px rgba(0, 0, 0, .18);
@@ -325,6 +325,11 @@ nav.scrolled {
 .nav-cta {
   display: flex;
   gap: .8rem;
+}
+
+.nav-cta .btn {
+  padding: .5rem 1.25rem;
+  font-size: .85rem;
 }
 
 /* ── Hamburger Button ─────────────────────────────────────── */

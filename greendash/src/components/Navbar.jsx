@@ -33,9 +33,9 @@ const Navbar = ({ scrolled }) => {
       <nav id="navbar" className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
           <a href="/" className="nav-brand" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
-            <img src={logo} alt="Green Loop Logo" style={{ height: '42px', width: 'auto', borderRadius: '4px' }} />
+            <img src={logo} alt="Green Loop Logo" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
             <div className="nav-name">
-              <strong style={{ color: '#66CDAA', fontFamily: 'Leelawadee UI', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.2rem' }}>
+              <strong style={{ color: '#66CDAA', fontFamily: 'Leelawadee UI', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.1rem' }}>
                 THE GREEN LOOP
               </strong>
               <span>Powered by Velotech Innovations</span>
