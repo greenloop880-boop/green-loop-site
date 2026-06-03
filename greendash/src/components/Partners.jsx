@@ -10,7 +10,7 @@ const Partners = () => {
           <div className="section-label" style={{ textAlign: 'center' }}>Government Aligned</div>
           <div className="divider divider--center"></div>
           <h2 className="display" style={{ textAlign: 'center' }}>Backed by <em>Policy</em></h2>
-          <p className="lead" style={{ textAlign: 'center', margin: '0 auto 3rem' }}>Green Loop is fully aligned with Government of
+          <p className="lead" style={{ textAlign: 'center', margin: '0 auto 3rem' }}>The Green Loop is fully aligned with Government of
             India schemes — so your upgrade earns subsidies, not just savings.</p>
         </div>
         <div className="schemes-grid stagger">

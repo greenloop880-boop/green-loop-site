@@ -5,7 +5,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#products', label: 'Products' },
   { href: '#services', label: 'Services' },
-  { href: '#greenloop', label: 'Green Loop' },
+  { href: '#greenloop', label: 'The Green Loop' },
   { href: '#offers', label: 'Offers' },
   { href: '#community', label: 'Community' },
 ];
@@ -33,7 +33,7 @@ const Navbar = ({ scrolled }) => {
       <nav id="navbar" className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
           <a href="/" className="nav-brand" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
-            <img src={logo} alt="Green Loop Logo" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
+            <img src={logo} alt="The Green Loop Logo" style={{ height: '36px', width: 'auto', borderRadius: '4px' }} />
             <div className="nav-name">
               <strong style={{ color: '#66CDAA', fontFamily: 'Leelawadee UI', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.1rem' }}>
                 THE GREEN LOOP
@@ -78,7 +78,7 @@ const Navbar = ({ scrolled }) => {
           <div className="drawer-header">
             <div className="drawer-brand">
               <img src={logo} alt="Logo" style={{ height: '32px' }} />
-              <span>GREEN LOOP</span>
+              <span>THE GREEN LOOP</span>
             </div>
             <button className="drawer-close" onClick={close}>✕</button>
           </div>

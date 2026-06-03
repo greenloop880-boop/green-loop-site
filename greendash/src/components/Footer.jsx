@@ -30,15 +30,15 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <a href="/" className="fb-logo" onClick={scrollToTop} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem', textDecoration: 'none' }}>
-              <img src={logo} alt="Green Loop Logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', padding: '2px' }} />
+              <img src={logo} alt="The Green Loop Logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', padding: '2px' }} />
               <div className="logo-text" style={{ display: 'flex', flexDirection: 'column' }}>
                 <strong style={{ color: '#66CDAA', fontFamily: 'Consolas', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.3rem', lineHeight: '1' }}>
-                  GREEN LOOP
+                  THE GREEN LOOP
                 </strong>
                 <span style={{ fontSize: '0.85rem', color: '#a0aec0', marginTop: '4px', lineHeight: '1.2' }}>Powered by Velotech Innovations</span>
               </div>
             </a>
-            <p>Velotech Innovations Pvt. Ltd. is an IIT Bhubaneswar-incubated company building India's greenest fan ecosystem — through VELORA fans and the Green Loop circular economy initiative.</p>
+            <p>Velotech Innovations Pvt. Ltd. is an IIT Bhubaneswar-incubated company building India's greenest fan ecosystem — through VELOTECH fans and the Green Loop circular economy initiative.</p>
             <div className="contact">
               <div>📍 IIT Bhubaneswar Campus, Jatni, Odisha</div>
               <div>✉ <a href="mailto:contact@velotechinnovations.in">contact@velotechinnovations.in</a></div>
@@ -49,10 +49,10 @@ const Footer = () => {
           <div>
             <h5>Products</h5>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-              <li><a href="#products">VELORA Pro 1200mm</a></li>
-              <li><a href="#products">VELORA Lite 1200mm</a></li>
-              <li><a href="#products">VELORA Smart Fan</a></li>
-              <li><a href="#products">VELORA Refurb BLDC</a></li>
+              <li><a href="#products">VELOTECH Pro 1200mm</a></li>
+              <li><a href="#products">VELOTECH Lite 1200mm</a></li>
+              <li><a href="#products">VELOTECH Smart Fan</a></li>
+              <li><a href="#products">VELOTECH Refurb BLDC</a></li>
               <li><a href="#products">BLDC Retrofit Kit</a></li>
             </ul>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h5>GREEN LOOP</h5>
+            <h5>THE GREEN LOOP</h5>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
               <li><a href="#greenloop">About the Initiative</a></li>
               <li><a href="#how">How It Works</a></li>
@@ -83,9 +83,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Velotech Innovations Pvt. Ltd. All rights reserved. VELORA is a registered brand of Velotech Innovations.</p>
+          <p>© 2026 Velotech Innovations Pvt. Ltd. All rights reserved. VELOTECH is a registered brand of Velotech Innovations.</p>
           <div className="badges">
-            <span className="footer-badge">🌿 Green Loop Initiative</span>
+            <span className="footer-badge">🌿 The Green Loop Initiative</span>
             <span className="footer-badge">⚡ BEE Aligned</span>
             <span className="footer-badge">🏛 IIT Bhubaneswar</span>
             <span className="footer-badge">♻ EPR Certified</span>

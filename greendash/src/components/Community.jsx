@@ -14,7 +14,7 @@ const Community = () => {
         <div className="testimonials stagger">
           <div className="testi">
             <div className="quote">"</div>
-            <p>Humara bijli bill pehle ₹1,800 aata tha. Ab ₹1,100 aa raha hai — sirf teen fans badle hain. Green Loop ne
+            <p>Humara bijli bill pehle ₹1,800 aata tha. Ab ₹1,100 aa raha hai — sirf teen fans badle hain. The Green Loop ne
               jo kaha, wahi hua. Bilkul sach.</p>
             <div className="testi-author">
               <div className="testi-avatar">RS</div>
@@ -41,7 +41,7 @@ const Community = () => {
           </div>
           <div className="testi">
             <div className="quote">"</div>
-            <p>I stock Green Loop refurb fans in my shop. My customers get quality fans at ₹1,899 — cheaper than any new
+            <p>I stock The Green Loop refurb fans in my shop. My customers get quality fans at ₹1,899 — cheaper than any new
               fan from Havells or Orient. I earn ₹200 per fan. It's the best deal I've found for my electrical shop in 10
               years.</p>
             <div className="testi-author">

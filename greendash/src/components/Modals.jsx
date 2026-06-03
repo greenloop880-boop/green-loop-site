@@ -46,7 +46,7 @@ const Modals = (props) => {
             <div className="nav-brand" style={{gap: '0.8rem'}}>
               <div className="nav-logo" style={{width: '32px', height: '32px', fontSize: '0.9rem'}}>GL</div>
               <div className="nav-name">
-                <strong style={{color: 'var(--white)', fontSize: '1rem'}}>Green Loop</strong>
+                <strong style={{color: 'var(--white)', fontSize: '1rem'}}>The Green Loop</strong>
                 <span style={{color: 'var(--gold)', fontSize: '0.6rem'}}>Powered by Velotech Innovations</span>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Modals = (props) => {
 
           <div className="login-titles">
             <h3>{loginTab === 'user' ? 'User Portal' : 'Admin Portal'}</h3>
-            <p>Secure access for Green Loop {loginTab === 'user' ? 'users' : 'administrators'}</p>
+            <p>Secure access for The Green Loop {loginTab === 'user' ? 'users' : 'administrators'}</p>
           </div>
 
           <form onSubmit={(e) => { e.preventDefault(); alert('Login functionality coming soon!'); }}>
@@ -149,9 +149,9 @@ const Modals = (props) => {
               <div className="form-group">
                 <label className="form-label">Product of Interest</label>
                 <select name="product" className="form-input" required>
-                  <option value="velora-pro">VELORA Pro</option>
-                  <option value="velora-lite">VELORA Lite</option>
-                  <option value="velora-smart">VELORA Smart</option>
+                  <option value="velotech-pro">VELOTECH Pro</option>
+                  <option value="velotech-lite">VELOTECH Lite</option>
+                  <option value="velotech-smart">VELOTECH Smart</option>
                   <option value="retrofit-kit">Retrofit Kit</option>
                 </select>
               </div>

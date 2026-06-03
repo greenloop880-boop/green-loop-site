@@ -12,10 +12,10 @@ const Ticker = () => {
       } else {
         // Fallback if not found yet
         setMessages([
-          "VELORA BLDC Fans — 62% Energy Savings",
+          "VELOTECH BLDC Fans — 62% Energy Savings",
           "Instant Karo — Zero Upfront Cost",
           "Buy Back Your Old Fan — Earn Carbon Credits",
-          "Green Loop — India's First Circular Fan Economy",
+          "The Green Loop — India's First Circular Fan Economy",
           "IIT Bhubaneswar — Velotech Innovations Pvt. Ltd."
         ]);
       }

@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-card-main">
               <div className="big-num">600M+</div>
               <h3>Old Induction Fans Running in India</h3>
-              <p>Each one consuming 75W of electricity — ₹500–700 per fan per year in electricity costs — when a VELORA
+              <p>Each one consuming 75W of electricity — ₹500–700 per fan per year in electricity costs — when a VELOTECH
                 BLDC fan uses just 28W and saves your household ₹1,500–2,500 per year per fan.</p>
             </div>
             <div className="about-badge">
@@ -30,7 +30,7 @@ const About = () => {
               <div className="mission-point">
                 <div className="mission-icon">⚡</div>
                 <div>
-                  <h4>VELORA — Our Fan Brand</h4>
+                  <h4>VELOTECH — Our Fan Brand</h4>
                   <p style={{ textAlign: "left" }}>A range of BLDC ceiling fans engineered for Indian homes — silent, powerful, remote-controlled, and
                     62% more efficient than standard induction fans.</p>
                 </div>
@@ -38,7 +38,7 @@ const About = () => {
               <div className="mission-point">
                 <div className="mission-icon">♻️</div>
                 <div>
-                  <h4>Green Loop — Our Initiative</h4>
+                  <h4>The Green Loop — Our Initiative</h4>
                   <p style={{ textAlign: "left" }}>India's first fully integrated fan circular economy. We buy back your old fan, refurbish it, and turn
                     every swap into a verified Carbon Credit Certificate.</p>
                 </div>

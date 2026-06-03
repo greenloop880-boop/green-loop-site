@@ -54,16 +54,16 @@ const GreenLoop = () => {
             <div className="i-lbl">CO₂ saved per fan per year</div>
           </div>
           <div className="impact-item">
-            <div className="i-val">₹52 Cr+</div>
-            <div className="i-lbl">Household savings at 2L fans</div>
+            <div className="i-val">₹10000 Cr+</div>
+            <div className="i-lbl">Household savings at 10cr fans</div>
           </div>
           <div className="impact-item">
             <div className="i-val">2,000+</div>
             <div className="i-lbl">Livelihoods by Year 3</div>
           </div>
           <div className="impact-item">
-            <div className="i-val">18×</div>
-            <div className="i-lbl">ROI on capital deployed</div>
+            <div className="i-val">100%</div>
+            <div className="i-lbl">Investment Recovered in Year 1</div>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ const Products = () => {
           <div>
             <div className="section-label">Our Products</div>
             <div className="divider"></div>
-            <h2 className="display">The VELORA <em>Fan Range</em></h2>
+            <h2 className="display">The VELOTECH <em>Fan Range</em></h2>
             <p className="lead">
               Powered by Velotech Innovations. Engineered for efficiency. Designed for every Indian home.
             </p>

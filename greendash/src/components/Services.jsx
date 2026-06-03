@@ -6,10 +6,10 @@ const Services = () => {
     {
       icon: '⚡',
       title: 'BLDC Fan Upgrade — Instant Karo',
-      desc: 'The Instant Karo offer is our zero-upfront upgrade programme. Sign up, a technician visits within 48 hours, your old fan is collected, and your new VELORA BLDC fan is installed and running — all before you pay a single rupee. Your electricity bill does the talking.',
+      desc: 'The Instant Karo offer is our zero-upfront upgrade programme. Sign up, a technician visits within 48 hours, your old fan is collected, and your new VELOTECH BLDC fan is installed and running — all before you pay a single rupee. Your electricity bill does the talking.',
       features: [
         'Zero upfront payment — ever',
-        'VELORA BLDC fan installed within 48 hours',
+        'VELOTECH BLDC fan installed within 48 hours',
         'Old fan collected at no additional cost',
         '5-speed remote control included (Pro model)',
         '62% electricity reduction visible on next bill',
@@ -68,10 +68,10 @@ const Services = () => {
       title: 'RWA / AOA Community Programme',
       desc: 'We work with Resident Welfare Associations and Apartment Owners Associations to activate entire housing societies under the Green Loop programme. One WhatsApp message from the AOA secretary to residents can unlock savings for hundreds of households — with zero effort from the association.',
       features: [
-        'Green Loop Desk installed in society lobby (free)',
+        'The Green Loop Desk installed in society lobby (free)',
         'Exchange Mela event co-organised with AOA quarterly',
         '₹500–1,000 community fund per Mela hosted',
-        '"Green Loop Certified Community" plaque provided',
+        '"The Green Loop Certified Community" plaque provided',
         'Monthly savings board for society notice board',
         '1 resident trained as paid Hub Coordinator',
       ],
@@ -81,14 +81,14 @@ const Services = () => {
     {
       icon: '🏪',
       title: 'MSME Dealer Partnership',
-      desc: "If you run an electrical shop, hardware store, or any retail outlet — becoming a Green Loop MSME Partner gives you access to quality refurb BLDC fans at 10% below any brand's MRP, a Green Loop Desk at your shop for free, and a commission on every fan sold or referral QR scan completed.",
+      desc: "If you run an electrical shop, hardware store, or any retail outlet — becoming a The Green Loop MSME Partner gives you access to quality refurb BLDC fans at 10% below any brand's MRP, a The Green Loop Desk at your shop for free, and a commission on every fan sold or referral QR scan completed.",
       features: [
-        'Stock Green Loop refurb fans at 10% below MRP',
-        'Green Loop Type A Desk provided at your shop free',
+        'Stock The Green Loop refurb fans at 10% below MRP',
+        'The Green Loop Type A Desk provided at your shop free',
         '₹150–200 commission per fan sold',
         '₹50 per referral QR scan at your counter',
         'Monthly training and product briefing from Velotech',
-        'Access to Green Loop MSME reseller network',
+        'Access to The Green Loop MSME reseller network',
       ],
       resultVal: '₹200',
       resultLbl: 'average commission per fan through your shop'
@@ -110,7 +110,7 @@ const Services = () => {
             <div className={`service-item ${activeService === 0 ? "active" : ""}`} onClick={() => setActiveService(0)}>
               <div className="s-icon">⚡</div>
               <h4>BLDC Fan Upgrade — Instant Karo</h4>
-              <p>Zero upfront. New VELORA BLDC fan installed at your home within 48 hours.</p>
+              <p>Zero upfront. New VELOTECH BLDC fan installed at your home within 48 hours.</p>
             </div>
 
             <div className={`service-item ${activeService === 1 ? "active" : ""}`} onClick={() => setActiveService(1)}>
@@ -140,7 +140,7 @@ const Services = () => {
             <div className={`service-item ${activeService === 5 ? "active" : ""}`} onClick={() => setActiveService(5)}>
               <div className="s-icon">🏪</div>
               <h4>MSME Dealer Partnership</h4>
-              <p>Stock Green Loop refurb fans in your store at 10% below brand MRP.</p>
+              <p>Stock The Green Loop refurb fans in your store at 10% below brand MRP.</p>
             </div>
           </div>
 
