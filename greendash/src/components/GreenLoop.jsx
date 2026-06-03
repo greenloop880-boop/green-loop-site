@@ -5,10 +5,9 @@ const GreenLoop = () => {
     <section id="greenloop">
       <div className="gl-hero fade-up">
         <div className="container--hero">
-          <div className="eyebrow">🌿 Green Loop — Our Flagship Initiative</div>
-          <h2>India's First <em>Circular Fan Economy</em></h2>
-          <p>Green Loop is Velotech Innovations' mission-driven initiative that transforms every old induction fan into a
-            revenue-generating, carbon-offsetting asset. We don't just sell new fans — we close the loop entirely.</p>
+          <div className="eyebrow">🌿 The Green Loop — Our Flagship Initiative</div>
+          <h2>India's First <em>Electric Motor Based Circular Economy</em></h2>
+          <p>The Green Loop is Velotech Innovations' mission-driven initiative that transforms every old induction motor into a highly energy-efficient, revenue-generating, and carbon-offsetting asset. We don't just sell or upgrade new motors — we measure, monitor, and monetise. We close the loop entirely.</p>
           <div className="gl-flow" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', alignItems: 'center' }}>
             <div className="gl-step"><span className="dot"></span> Upgrade</div>
             <span className="gl-arrow">→</span>

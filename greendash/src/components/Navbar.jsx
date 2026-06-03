@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import logo from '../assets/Logo.png';
 
 const navLinks = [
-  { href: '#about',     label: 'About' },
-  { href: '#products',  label: 'Products' },
-  { href: '#services',  label: 'Services' },
+  { href: '#about', label: 'About' },
+  { href: '#products', label: 'Products' },
+  { href: '#services', label: 'Services' },
   { href: '#greenloop', label: 'Green Loop' },
-  { href: '#offers',    label: 'Offers' },
+  { href: '#offers', label: 'Offers' },
   { href: '#community', label: 'Community' },
 ];
 
@@ -36,7 +36,7 @@ const Navbar = ({ scrolled }) => {
             <img src={logo} alt="Green Loop Logo" style={{ height: '42px', width: 'auto', borderRadius: '4px' }} />
             <div className="nav-name">
               <strong style={{ color: '#66CDAA', fontFamily: 'Leelawadee UI', fontWeight: '700', letterSpacing: '0.5px', fontSize: '1.2rem' }}>
-                GREEN LOOP
+                THE GREEN LOOP
               </strong>
               <span>Powered by Velotech Innovations</span>
             </div>
@@ -70,10 +70,10 @@ const Navbar = ({ scrolled }) => {
 
       {/* ── Mobile Drawer ── */}
       <div className={`drawer-backdrop ${isOpen ? 'active' : ''}`} onClick={close} />
-      
+
       <aside className={`mobile-drawer ${isOpen ? 'active' : ''}`}>
         <div className="drawer-container">
-          
+
           {/* Header */}
           <div className="drawer-header">
             <div className="drawer-brand">
